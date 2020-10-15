@@ -19,9 +19,15 @@ Page({
   getSwiperList() {
     request({
       url: '/home/swiperdata',
-    }).then((result) => {
+    }).then((res) => {
+
+      for (const key in res) {
+        if (res.hasOwnProperty(key)) {
+          res[key]['navigator_url'] = res[key]['navigator_url'].replace(/main/, 'index');
+        }
+      }
       this.setData({
-        swiperList: result
+        swiperList: res
       })
     })
   },
@@ -41,9 +47,14 @@ Page({
   getfloorList() {
     request({
       url: '/home/floordata',
-    }).then((result) => {
+    }).then((res) => {
+      console.log(res);
+      let data = JSON.stringify(res)
+      data = data.replace(/goods_list/g, 'goods_list/index')
+      data = JSON.parse(data)
+      console.log(data);
       this.setData({
-        floordata: result
+        floordata: data
       })
     })
   },

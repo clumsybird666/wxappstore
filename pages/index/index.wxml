@@ -5,7 +5,9 @@
   <view class="index_swiper">
     <swiper indicator-dots autoplay indicator-color>
       <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
-        <image src="{{item.image_src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        <navigator class="" target="" url="{{item.navigator_url}}" hover-class="navigator-hover" open-type="navigate">
+          <image src="{{item.image_src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        </navigator>
       </swiper-item>
     </swiper>
   </view>
@@ -23,7 +25,7 @@
         <image src="{{item.floor_title.image_src}}" mode="widthFix" lazy-load="false" />
       </view>
       <!-- 内容 -->
-      <navigator class="floor_list" wx:for="{{item.product_list}}" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      <navigator class="floor_list" wx:for="{{item.product_list}}" target="" url="{{item.navigator_url}}" hover-class="navigator-hover" open-type="navigate">
         <image class="" src="{{item.image_src}}" mode="{{index==0?'widthFix':'scaleToFill'}}" lazy-load="false" />
       </navigator>
     </view>
