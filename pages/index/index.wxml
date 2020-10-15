@@ -1,0 +1,31 @@
+<view class="index">
+  <!-- 搜索框 -->
+  <SearchInput></SearchInput>
+  <!-- 轮播图 -->
+  <view class="index_swiper">
+    <swiper indicator-dots autoplay indicator-color>
+      <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+        <image src="{{item.image_src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 导航 -->
+  <view class="index_cate">
+    <navigator wx:for="{{catList}}" wx:key="name" url="" hover-class="navigator-hover" open-type="navigate">
+      <image class="" src="{{item.image_src}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    </navigator>
+  </view>
+  <!-- 瓷片区 -->
+  <view class="index_floor">
+    <view class="floor_group" wx:for="{{floordata}}" wx:key="floor_title">
+      <!-- 标题 -->
+      <view class="floor_title">
+        <image src="{{item.floor_title.image_src}}" mode="widthFix" lazy-load="false" />
+      </view>
+      <!-- 内容 -->
+      <navigator class="floor_list" wx:for="{{item.product_list}}" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        <image class="" src="{{item.image_src}}" mode="{{index==0?'widthFix':'scaleToFill'}}" lazy-load="false" />
+      </navigator>
+    </view>
+  </view>
+</view>

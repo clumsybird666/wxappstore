@@ -1,0 +1,36 @@
+.search_row{
+  display: flex;
+  margin-top: 10rpx;
+  justify-content: center;
+}
+.search_row input{
+  border: 1px solid #dddddd;
+  width: 80%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #f7f7f7f7;
+  border-radius: 6px;
+}
+.search_row button{
+  display: flex;
+  align-items: center;
+  border: 1px solid #dddddd;
+  margin: 0;
+}
+.place-holder{
+  margin-left: 20rpx;
+}
+.content_row{
+  margin-top: 10rpx;
+  width: 96%;
+  height: 70rpx;
+  display: block;
+  margin:  0 auto;
+  border-bottom: 1px solid #dddddd;
+  line-height: 70rpx;
+}
+.content_title{
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}

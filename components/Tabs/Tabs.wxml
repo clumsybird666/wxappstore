@@ -1,0 +1,7 @@
+<view class="tabs">
+  <view class="menu_tabs">
+    <view wx:for="{{tabs}}" wx:key="id" bindtap="clickMenu" data-id="{{index}}" class="tabs_title {{item.isActive?'title_active':''}}">
+      {{item.value}}
+    </view>
+  </view>
+</view>

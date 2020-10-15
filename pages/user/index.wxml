@@ -1,0 +1,85 @@
+<view class="user_bg no_info" wx:if="{{!userInfo}}">
+  <view bind:tap="clickLogin" class="userlogin" wx:if="{{!userInfo}}">登录</view>
+</view>
+<view class="user_bg" wx:else>
+  <image class="" src="{{userInfo.avatarUrl}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+  <view class="user_info">
+    <image class="" src="{{userInfo.avatarUrl}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <view class="user_name">{{userInfo.nickName}}</view>
+  </view>
+</view>
+<!-- 我的个人信息 主体内容 -->
+<view class="user_detail">
+  <view class="content">
+    <!-- 我的足迹 -->
+    <view class="indent">
+      <view class="indentcon">
+        <view>0</view>
+        <view>收藏的店铺</view>
+      </view>
+      <view class="indentcon">
+        <view>0</view>
+        <view>收藏的商品</view>
+      </view>
+      <view class="indentcon">
+        <view>0</view>
+        <view>关注的商品</view>
+      </view>
+      <view class="indentcon">
+        <view>0</view>
+        <view>我的足迹</view>
+      </view>
+    </view>
+  </view>
+  <navigator url="../order/index?type=1" hover-class="navigator-hover" open-type="navigate">
+    <view class="title">
+      <view>我的订单</view>
+    </view>
+  </navigator>
+  <!-- 订单信息 -->
+  <view class="content">
+    <view class="indent">
+      <navigator url="../order/index?type=1" open-type="navigate">
+        <view class="indentcon">
+          <view>0</view>
+          <view>全部订单</view>
+        </view>
+      </navigator>
+      <navigator url="../order/index?type=2" open-type="navigate">
+        <view class="indentcon">
+          <view>0</view>
+          <view>待付款</view>
+        </view>
+      </navigator>
+      <navigator url="../order/index?type=3" open-type="navigate">
+        <view class="indentcon">
+          <view>0</view>
+          <view>待收获</view>
+        </view>
+      </navigator>
+      <navigator url="../order/index?type=4" open-type="navigate">
+        <view class="indentcon">
+          <view>0</view>
+          <view>退款售后</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="title">
+    <view>收获地址管理</view>
+  </view>
+  <view style="margin-top:20rpx">
+    <view class="title">
+      <view>联系客服</view>
+    </view>
+    <view class="title">
+      <view>意见反馈</view>
+    </view>
+    <view class="title">
+      <view>关于我们</view>
+    </view>
+  </view>
+  <view class="title" style="margin-top:20rpx">
+    <view>把应用推荐给其他人</view>
+  </view>
+</view>

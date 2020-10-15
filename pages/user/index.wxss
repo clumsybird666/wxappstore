@@ -1,0 +1,84 @@
+
+.userlogin{
+  border: 1px solid #fff;
+  width: 150rpx;
+  border-radius: 4px;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  color: #FFF;
+}
+.user_bg{
+  height: 45vh;
+  width: 100%;
+  overflow: hidden;
+}
+.no_info{
+  background: var(--themeColor);
+}
+.user_bg>image{
+position: absolute;
+width: 100%;
+overflow: hidden;
+z-index: -1;
+filter: blur(10rpx);
+top: 0;
+right: 0;
+left: 0;
+}
+.user_bg .user_info image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+}
+.user_bg .user_info{
+  margin-top: 200rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.user_bg .user_info .user_name{
+  margin-top: 70rpx;
+}
+.user_detail{
+  background: #eeeeeef7;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+.content{
+  background: #fff;
+  width: 94%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20rpx;
+  height: 100rpx;
+  padding-top: 40rpx;
+}
+.indent{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.indentcon{
+  text-align: center;
+  line-height: 40rpx;
+}
+.title{
+  background: #fff;
+  width: 94%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 5rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.title>view{
+  margin-left: 36rpx;
+}

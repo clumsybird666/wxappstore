@@ -1,0 +1,119 @@
+page {
+  width: 100%;
+}
+.container {
+  width: 100%;
+}
+.container .address_info {
+  margin-top: 30rpx;
+  padding: 30rpx;
+  border-bottom: 1px solid #dddddd;
+}
+.container .address_info .address_detail {
+  margin-top: 30rpx;
+}
+.container .address_info .user_info {
+  overflow: hidden;
+}
+.container .address_info .user_info .user_phone {
+  float: right;
+}
+.container .cart_info {
+  padding: 0 30rpx;
+}
+.container .cart_info .cartinfo_item {
+  border-bottom: 1px solid #f7f7f7f7;
+  height: 200rpx;
+  display: flex;
+  margin-top: 30rpx;
+}
+.container .cart_info .cartinfo_item checkbox-group checkbox {
+  line-height: 10rpx;
+}
+.container .cart_info .cartinfo_item navigator {
+  display: flex;
+}
+.container .cart_info .cartinfo_item navigator .cartinfoitem_row .item__bottom {
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+.container .cart_info .cartinfo_item navigator .cartinfoitem_row .title_item {
+  font-size: 26rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.container .cart_info .cartinfo_item navigator .cartinfoitem_row .price_item {
+  font-size: 38rpx;
+  color: red;
+  float: left;
+}
+.container .cart_info .cartinfo_item navigator .cartinfoitem_row .tools_num {
+  float: right;
+  display: flex;
+}
+.container .cart_info .cartinfo_item navigator .cartinfoitem_row .tools_num .num {
+  margin: 0 30rpx;
+}
+.container .cart_info .cartinfo_item navigator .cartinfoitem_row .tools_num .num_tools_item {
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+.container .cart_info .cartinfo_item navigator image {
+  width: 60%;
+  height: 30%;
+  margin: 0 30rpx;
+}
+.container .cart_title {
+  font-size: 42rpx;
+  border-bottom: 1px solid #dddddd;
+}
+.container .cart_title text {
+  line-height: 100rpx;
+  margin-left: 30rpx;
+}
+.footer_tool {
+  border-top: 1px solid #dddddd;
+  padding: 0 0 0 30rpx;
+  position: fixed;
+  bottom: 0;
+  height: 90rpx;
+  background: #fff;
+  width: 100%;
+}
+.footer_tool .all_chk_wrap {
+  float: left;
+  overflow: hidden;
+}
+.footer_tool .all_chk_wrap checkbox-group {
+  line-height: 80rpx;
+}
+.footer_tool .total_price_wrap {
+  float: right;
+  display: flex;
+}
+.footer_tool .total_price_wrap .freight {
+  font-size: 22rpx;
+}
+.footer_tool .total_price_wrap .total_price {
+  margin-right: 30rpx;
+}
+.footer_tool .total_price_wrap .total_price text {
+  color: red;
+  font-size: 40rpx;
+}
+.footer_tool .total_price_wrap .order_pay_wrap {
+  width: 180rpx;
+  font-weight: bold;
+  font-size: 34rpx;
+  line-height: 98rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  color: #ffff;
+  margin-right: 30rpx;
+}

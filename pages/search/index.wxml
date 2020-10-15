@@ -1,0 +1,9 @@
+<view class="search_row">
+  <input bindinput="handleInput" placeholder-class="place-holder" cursor="80" placeholder="请输入要搜索的内容" type="text" />
+  <button size="mini" bind:tap="">搜索</button>
+</view>
+<view class="content_row" wx:for="{{goodsList}}">
+  <navigator class="" target="" url="../goods_detail/index?goods_id={{item.goods_id}} " hover-class="navigator-hover" open-type="navigate">
+    <view class="content_title">{{item.goods_name}}</view>
+  </navigator>
+</view>

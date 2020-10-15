@@ -1,0 +1,35 @@
+.first_tabs{
+  .goods_item{
+    display: flex;
+    border-bottom: 1rpx solid #dddddd;
+    padding: 20rpx;
+    .goods_img{
+      flex: 2;
+      display: flex;
+  
+      justify-content: center;
+      align-items: center;
+      image{
+        width: 100%;
+      }
+    }
+    .goods_detail{
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30rpx 0 0 20rpx;
+      .goods_title{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display:-webkit-box; //作为弹性伸缩盒子模型显示。
+        -webkit-box-orient:vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+        -webkit-line-clamp:2; //显示的行
+      }
+      .goods_price{
+color: red;
+font-size: 38rpx;
+      }
+    }
+  }
+}
